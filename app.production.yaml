@@ -1,5 +1,5 @@
 runtime: python310
-entrypoint: gunicorn "goodmap.goodmap:create_app('/config.yml')" -b :$PORT
+entrypoint: gunicorn "goodmap.goodmap:create_app('/workspace/config.yml')" -b :$PORT
 
 service: default
 handlers:
